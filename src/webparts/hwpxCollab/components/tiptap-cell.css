@@ -1,0 +1,76 @@
+/* TipTap 셀 에디터 기본 스타일 */
+
+.tiptap-cell-editor {
+  min-height: 1.4em;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: 1.6;
+  padding: 1px 2px;
+}
+
+.tiptap-cell-editor p {
+  margin: 0;
+  padding: 0;
+}
+
+.tiptap-cell-editor:focus {
+  outline: none;
+}
+
+/* Collaboration cursor 스타일 */
+.collaboration-cursor__caret {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  margin-left: -1px;
+  margin-right: -1px;
+  pointer-events: none;
+  position: relative;
+  word-break: normal;
+}
+
+.collaboration-cursor__label {
+  border-radius: 3px 3px 3px 0;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  left: -1px;
+  line-height: normal;
+  padding: 0.1rem 0.3rem;
+  position: absolute;
+  top: -1.4em;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* 편집자 배지 */
+.collab-badge-container {
+  position: absolute;
+  top: -14px;
+  left: 4px;
+  display: flex;
+  gap: 3px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* TipTap 본문 블록 에디터 스타일 */
+div[data-block] .tiptap-cell-editor {
+  min-height: 1.2em;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+
+div[data-block] .tiptap-cell-editor p {
+  margin: 0;
+  padding: 0;
+}
+
+div[data-block]:focus-within {
+  outline: 2px solid #4F8EF7;
+  outline-offset: -2px;
+  border-radius: 3px;
+}

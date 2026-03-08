@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "hwpx-collab-editor",
+    "id": "ce54db4f-5e0a-4f36-b54c-8373c2149e64",
+    "version": "1.1.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [],
+    "developer": {
+      "name": "의정부신곡초 수석교사 KSH",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "HWPX 한글 문서 실시간 협업 편집기",
+        "ko-kr": "HWPX 한글 문서 실시간 협업 편집기"
+      },
+      "longDescription": {
+        "default": "SharePoint 문서 라이브러리 연동 HWPX(한글) 실시간 협업 편집기. 표 셀 및 본문 텍스트의 서식(굵기, 색상, 크기, 정렬)을 유지하면서 편집 가능.",
+        "ko-kr": "SharePoint 문서 라이브러리 연동 HWPX(한글) 실시간 협업 편집기. 표 셀 및 본문 텍스트의 서식(굵기, 색상, 크기, 정렬)을 유지하면서 편집 가능."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": ["Productivity"]
+    },
+    "features": [
+      {
+        "title": "한글 협업 편집기",
+        "description": "HWPX 한글 문서 실시간 협업 편집 기능을 활성화합니다.",
+        "id": "cd92d42b-5369-493c-936b-1e1d96de3206",
+        "version": "1.1.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/hwpx-collab-spfx.sppkg"
+  }
+}

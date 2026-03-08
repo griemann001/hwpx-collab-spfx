@@ -1,0 +1,63 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.1.0",
+  "id": "ce54db4f-5e0a-4f36-b54c-8373c2149e64",
+  "developer": {
+    "name": "의정부신곡초 수석교사 KSH",
+    "websiteUrl": "https://{teamSiteDomain}",
+    "privacyUrl": "https://{teamSiteDomain}/_layouts/15/Privacy.aspx",
+    "termsOfUseUrl": "https://{teamSiteDomain}/_layouts/15/TermsOfUse.aspx"
+  },
+  "name": {
+    "short": "한글 협업 편집기",
+    "full": "HWPX 한글 문서 실시간 협업 편집기"
+  },
+  "description": {
+    "short": "HWPX 한글 문서 실시간 협업 편집기",
+    "full": "SharePoint 문서 라이브러리 연동 HWPX(한글) 실시간 협업 편집기. 표 셀 및 본문 텍스트의 서식(굵기, 색상, 크기, 정렬)을 유지하면서 여러 사용자가 동시에 편집할 수 있습니다."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#2563EB",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=e67628b0-3949-4651-88b2-721bf37c56c8%26forceLocale={locale}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "e67628b0-3949-4651-88b2-721bf37c56c8",
+      "name": "한글 협업 편집기",
+      "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=e67628b0-3949-4651-88b2-721bf37c56c8%26forceLocale={locale}",
+      "websiteUrl": "https://products.office.com/sharepoint",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "*.sharepoint-df.com",
+    "spoppe-a.akamaihd.net",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net",
+    "msft.spoppe.com",
+    "collab.gfea-scratch.org"
+  ],
+  "webApplicationInfo": {
+    "id": "00000003-0000-0ff1-ce00-000000000000",
+    "resource": "https://{teamSiteDomain}"
+  }
+}
